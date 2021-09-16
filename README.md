@@ -23,9 +23,10 @@ Tools & Frameworks
   AWS API Gateway & Lambda
   Dingtalk & Wechat Webhook API
 
-Python library(Already integrated):
-  dingtalk
-  wechat_work_webhook
+Python library:
+  dingtalk(Already integrated)
+  wechat_work_webhook(Already integrated)
+  requests(Need to download or use zip file "code-0809-1.zip")
 
 Pre-requisites
 -This application needs to be hosted AWS's lambda or somewhere where is has access to the internet. 
@@ -53,10 +54,13 @@ Replace Key  in lambda_function.py:
   "access_token"
 
 Next thing
-To apply for an AWS account, you can use the service for free for one year,
-Upload the previously modified code to the AWS's lambda, and configure the api gateway to be associated with it to listen to the alarm information uploaded from the Meraki dashboard. 
+download Python's requests library or use zip file "code-0809-1.zip"
+Compressed together with "dingtalk.py", "lambda_function.py", "wechat_work_webhook.py" and upload to lambda 
+
 
 Finally
+To apply for an AWS account, you can use the service for free for one year,
+Configure the api gateway to be associated with Lambda to listen to the alarm information uploaded from the Meraki dashboard. 
 Fill in your AWS api gateway address into the Meraki dashboard alert webhook. 
 
 
@@ -66,3 +70,7 @@ yancpan@cisco.com
 
 License
 This project is licensed to you under the terms of the Cisco Sample Code License.
+
+
+
+
